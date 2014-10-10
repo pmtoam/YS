@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人信息页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人信息"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.lbt.yunsu.widget.ReboundScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_top_title"
+        android:background="#cccccc" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/cell_first"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="真实姓名："
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王鑫"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/cell_center"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="昵　　称："
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="猫尾巴猫尾巴猫尾..."
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/cell_center"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="联系方式："
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18695478521"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="42dip" -->
+            <!-- android:layout_marginLeft="8dp" -->
+            <!-- android:layout_marginRight="8dp" -->
+            <!-- android:background="@drawable/cell_center" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_rl_photo" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="联系方式		18695478521" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="15sp" /> -->
+
+
+            <!-- </RelativeLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/cell_center"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="邮箱地址："
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="888@163.com"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="42dip" -->
+            <!-- android:layout_marginLeft="8dp" -->
+            <!-- android:layout_marginRight="8dp" -->
+            <!-- android:background="@drawable/cell_center" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_rl_email" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="邮箱地址		888@163.com" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="15sp" /> -->
+
+
+            <!-- </RelativeLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/cell_center"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="所在城市："
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上海"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="42dip" -->
+            <!-- android:layout_marginLeft="8dp" -->
+            <!-- android:layout_marginRight="8dp" -->
+            <!-- android:background="@drawable/cell_center" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_rl_city" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="所在城市		上海" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="15sp" /> -->
+
+
+            <!-- </RelativeLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/cell_center"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="公司名称："
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="上海立佰趣信息科技有限公司"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="42dip" -->
+            <!-- android:layout_marginLeft="8dp" -->
+            <!-- android:layout_marginRight="8dp" -->
+            <!-- android:background="@drawable/cell_center" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_rl_company" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="公司名称		上海立佰趣信息科技有限公司" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="15sp" /> -->
+
+
+            <!-- </RelativeLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/cell_bottom"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="职　　位："
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人事经理"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="42dip" -->
+            <!-- android:layout_marginLeft="8dp" -->
+            <!-- android:layout_marginRight="8dp" -->
+            <!-- android:background="@drawable/cell_bottom" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_rl_position" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="职位				人事经理" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="15sp" /> -->
+
+
+            <!-- </RelativeLayout> -->
+
+        </LinearLayout>
+    </com.lbt.yunsu.widget.ReboundScrollView>
+
+</RelativeLayout>

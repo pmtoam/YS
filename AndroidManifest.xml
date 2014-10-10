@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lbt.yunsu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.lbt.yunsu.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lbt.yunsu.FActivity0"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.FActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.FActivity2"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.FActivity3"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.FActivity4"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa4.PagerInfoFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa4.PagerInfoAcountManagerFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa4.PagerInfoAcountManagerOrderFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa4.PagerInfoCommentFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa4.PagerInfoCommentDetailsFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa4.PagerInfoRecommendFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa4.PagerInfoUpdatePwdFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa4.PagerInfoAboutFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa0.MinsuDetailsFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa0.BookingMinsuFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lbt.yunsu.fa2.MinsuListFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+    </application>
+
+</manifest>

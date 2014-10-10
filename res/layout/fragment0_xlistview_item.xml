@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主页选项卡碎片0 中XListView 的 item 布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="185dp" >
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/minsu_0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#990099cc"
+        android:padding="3dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清风民宿"
+                android:textColor="#ffffff" />
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="@style/small_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@drawable/selector_color_bg_transparent_lightgray" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 服务特色碎片布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="服务特色"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageButton
+            android:id="@+id/server_feature_imgbtn_back"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+    <com.lbt.yunsu.widget.ReboundScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_top_title"
+        android:layout_margin="10dp"
+        android:background="#cccccc" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_top_corner_no_bottom_line"
+                android:minHeight="380dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="清风9民宿（上海浦东机场江镇店）座落于浦东新区川南奉公路835号，交通便利，是出入浦东机场最佳中转选择。 客栈设施齐全，装修温馨舒适，拥有大床房、情侣房、标准间等多种房型供宾客选择，同时为宾客提供票务服务、洗衣服务、停车场等、24小时热水淋浴、闭路电视系统，互联网免费宽带上网。并且客人可在客栈前台获取海关申报单及出入境登记卡。大堂可提供公用电脑，为宾客提供更多便利。景悦99客栈-江镇店以友好、高效的专业团队竭诚为您提供优越、周到的服务，欢迎您的光临！"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.lbt.yunsu.widget.ReboundScrollView>
+
+</RelativeLayout>

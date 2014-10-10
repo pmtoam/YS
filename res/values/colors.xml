@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title_bar_bg">#000000</color>
+    <color name="title_text_color">#ffffff</color>
+    <color name="cccccc">#88cccccc</color>
+
+	<color name="write">#ffffff</color>
+	<color name="black">#555555</color>
+	<color name="lightblack">#77000000</color>
+	<color name="danhuise">#DCDCDC</color>
+	<color name="blue">#0099cc</color>
+	<color name="blue_99">#990099cc</color>
+    
+</resources>
